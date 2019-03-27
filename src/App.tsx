@@ -1,6 +1,6 @@
-import * as React from 'react';
-import './App.css';
-import Plot from './components/Plot'
+import * as React from 'react'
+import './App.css'
+import Plot from './containers/PlotContainer'
 
 class App extends React.Component {
   public render() {
@@ -9,10 +9,10 @@ class App extends React.Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <Plot name="TypeScript" enthusiasmLevel={2} />
+        <Plot />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
