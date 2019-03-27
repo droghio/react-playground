@@ -1,4 +1,4 @@
-import * as constants from '../constants/constants'
+import * as constants from '../constants/PlotConstants'
 
 export interface IIncrementEnthusiasm {
     type: constants.INCREMENT_ENTHUSIASM
