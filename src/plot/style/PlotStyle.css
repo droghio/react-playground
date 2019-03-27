@@ -1,0 +1,32 @@
+.plot {
+    padding: 1em;
+}
+
+.plot .button-container {
+    padding-top: 1em;
+}
+
+.plot .button-container button,input {
+    background-color: transparent;
+    padding: .5em;
+    border: solid 1px #000;
+    margin: .5em;
+    min-width: 150px;
+    transition: opacity .5s;
+}
+
+.plot .button-container button:hover,input:hover {
+    cursor: pointer;
+    opacity: .3;
+}
+
+@keyframes wiggle {
+    0%  { transform: rotate(-20deg) scale(.5) }
+    50% { transform: rotate(20deg) scale(1) }
+    100% { transform: rotate(-20deg) scale(.5) }
+}
+
+.plot .salutation {
+    animation: wiggle infinite;
+    padding: 8em;
+}

@@ -16,10 +16,11 @@ export function mapStateToProps({ plot } : IWrappedState ) {
     }
 }
 
-export function mapDispatchToProps(dispatch: Dispatch<actions.EnthusiasmAction>) {
+export function mapDispatchToProps(dispatch: Dispatch<actions.EnthusiasmAction|actions.AlterNameAction>) {
     return {
         onDecrement: () => dispatch(actions.decrementEnthusiasm()),
         onIncrement: () => dispatch(actions.incrementEnthusiasm()),
+        onNameChange: (n: string) => dispatch(actions.changeName(n)),
     }
 }
 
