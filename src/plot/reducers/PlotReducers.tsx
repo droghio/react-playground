@@ -2,7 +2,12 @@ import { EnthusiasmAction } from '../actions/PlotActions'
 import { DECREMENT_ENTHUSIASM, INCREMENT_ENTHUSIASM } from '../constants/PlotConstants'
 import { IStoreState } from '../types/PlotTypes'
 
-export function plot(state: IStoreState = { languageName: "TEST", enthusiasmLevel: 1 }, action: EnthusiasmAction): IStoreState {
+const DefaultState = {
+    enthusiasmLevel: 1,
+    languageName: "TEST"
+}
+
+export function plot(state: IStoreState = DefaultState, action: EnthusiasmAction): IStoreState {
     switch (action.type) {
         case INCREMENT_ENTHUSIASM:
             return { ...state, enthusiasmLevel: state.enthusiasmLevel + 1 }

@@ -1,4 +1,4 @@
 export interface IStoreState {
-    languageName: string
-    enthusiasmLevel: number
+    readonly enthusiasmLevel: number
+    readonly languageName: string
 }
